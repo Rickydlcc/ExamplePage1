@@ -5,6 +5,7 @@
   --primaryColor: #1fa67a;
   --navLetters: #999;
   --viewerPColor: #3b3b3bcc;
+  --footerColor : #333;
 }
 * {
   margin: 0;
@@ -208,9 +209,6 @@ hr{
   border: #444 1px solid;
 }
 .article-preview{
-  /* Delete this */
-  /* outline: 1px solid red; */
-  /*  */
   width: 100%;
   height: 30vh;
   margin-top: 1rem;
@@ -263,7 +261,21 @@ hr{
   color: #fff;
   transition: .2s;
 }
+.olderButton{
+  width: 100%;
+  height: 4vh;
 
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--footerColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.olderButton:hover{
+  background-color: var(--primaryColor);
+}
 
 /*  */
 
