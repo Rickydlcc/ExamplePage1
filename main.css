@@ -4,6 +4,7 @@
 :root {
   --primaryColor: #1fa67a;
   --navLetters: #999;
+  --viewerPColor: #3b3b3bcc;
 }
 * {
   margin: 0;
@@ -51,6 +52,11 @@ nav ul li:hover {
   background-color: var(--primaryColor);
   color: #fff;
 }
+nav ul li:nth-child(1),
+nav ul li:nth-child(1) h3 {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
 nav ul li h3 {
   font-size: 1rem;
 
@@ -58,3 +64,97 @@ nav ul li h3 {
 }
 
 /*  */
+
+main {
+  width: 100%;
+  height: fit-content;
+}
+
+/*  */
+
+.viewer {
+  width: 100%;
+  height: 58vh;
+}
+.viewer-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+.viewer-info {
+  width: 100%;
+  height: 80%;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(Img/forest.jpg);
+  background-size: cover;
+}
+.viewer-info h2 {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2rem 1rem;
+
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.viewer-info p {
+  width: 45%;
+  height: fit-content;
+  padding: 0.5rem;
+
+  background-color: var(--viewerPColor);
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.viewer-downloadArea {
+  width: 100%;
+  height: 20%;
+
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.viewer-downloadArea h2 {
+  width: 40%;
+  
+  font-size: 1.8rem;
+  opacity: 0.9;
+  color: #fff;
+}
+.viewer-downloadButton {
+  width: 12%;
+  height: 2rem;
+  padding: 10px;
+  box-sizing: content-box;
+  
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.viewer-downloadButton button {
+  width: 100%;
+  height: 100%;
+  
+  color: #fff;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.viewer-downloadButton:hover, .viewer-downloadButton:hover > button{
+  background-color: #fff;
+  color: var(--primaryColor);
+  
+}
