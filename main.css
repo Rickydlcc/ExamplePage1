@@ -169,9 +169,6 @@ main {
   display: flex;
 }
 article{
-  /* Delete this */
-  /* outline: 1px solid red; */
-  /*  */
   width: 70%;
   height: fit-content;
   margin-top: 2rem;
@@ -179,6 +176,7 @@ article{
 .article-content{
   width: 100%;
   height: fit-content;
+  margin-bottom: 3rem;
 }
 .article-title{
   width: 40%;
@@ -202,7 +200,7 @@ article{
 
   color: var(--primaryColor);
 }
-.article-content hr{
+hr{
   width: 100%;
   margin: auto;
   opacity: .1;
