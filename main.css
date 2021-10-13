@@ -5,7 +5,7 @@
   --primaryColor: #1fa67a;
   --navLetters: #999;
   --viewerPColor: #3b3b3bcc;
-  --footerColor : #333;
+  --footerColor: #333;
 }
 * {
   margin: 0;
@@ -129,7 +129,7 @@ main {
 }
 .viewer-downloadArea h2 {
   width: 40%;
-  
+
   font-size: 1.8rem;
   opacity: 0.9;
   color: #fff;
@@ -139,7 +139,7 @@ main {
   height: 2rem;
   padding: 10px;
   box-sizing: content-box;
-  
+
   border: 1px solid #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -147,39 +147,39 @@ main {
 .viewer-downloadButton button {
   width: 100%;
   height: 100%;
-  
+
   color: #fff;
   font-size: 1.2rem;
   background: none;
   border: none;
   cursor: pointer;
 }
-.viewer-downloadButton:hover, .viewer-downloadButton:hover > button{
+.viewer-downloadButton:hover,
+.viewer-downloadButton:hover > button {
   background-color: #fff;
   color: var(--primaryColor);
-  
 }
 
 /*  */
 
-.main-article{
+.main-article {
   width: 100%;
   height: fit-content;
   padding: 0 5rem;
 
   display: flex;
 }
-article{
+article {
   width: 70%;
   height: fit-content;
   margin-top: 2rem;
 }
-.article-content{
+.article-content {
   width: 100%;
   height: fit-content;
   margin-bottom: 3rem;
 }
-.article-title{
+.article-title {
   width: 40%;
   height: 6rem;
 
@@ -188,58 +188,58 @@ article{
   flex-direction: column;
   justify-content: center;
 }
-.article-title h1{
+.article-title h1 {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: .5rem; 
+  margin-bottom: 0.5rem;
 }
-.article-title p{
-  font-size: .9rem;
+.article-title p {
+  font-size: 0.9rem;
 }
-.article-title p i{
-  margin: 0 .5rem;
+.article-title p i {
+  margin: 0 0.5rem;
 
   color: var(--primaryColor);
 }
-hr{
+hr {
   width: 100%;
   margin: auto;
-  opacity: .1;
+  opacity: 0.1;
 
   border: #444 1px solid;
 }
-.article-preview{
+.article-preview {
   width: 100%;
   height: 30vh;
   margin-top: 1rem;
 
   display: flex;
 }
-.article-image{
+.article-image {
   width: 50%;
   height: 90%;
 
   border: 5px solid #9c9c9c46;
   border-radius: 5px;
 }
-.article-image img{
+.article-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.article-info{
+.article-info {
   width: 50%;
   height: fit-content;
   padding: 0 1rem;
   position: relative;
 }
-.article-info p{
+.article-info p {
   color: #444444cc;
   font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
-.article-info button{
+.article-info button {
   width: 40%;
   height: 3vh;
   padding: 2px;
@@ -251,17 +251,17 @@ hr{
   cursor: pointer;
   font-size: 1rem;
   color: var(--primaryColor);
-  border: .5px solid #44444413;
+  border: 0.5px solid #44444413;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.article-info button:hover{
+.article-info button:hover {
   background-color: var(--primaryColor);
   color: #fff;
-  transition: .2s;
+  transition: 0.2s;
 }
-.olderButton{
+.olderButton {
   width: 100%;
   height: 4vh;
 
@@ -273,13 +273,70 @@ hr{
   justify-content: center;
   align-items: center;
 }
-.olderButton:hover{
+.olderButton:hover {
   background-color: var(--primaryColor);
 }
 
 /*  */
 
-aside{
-  width: 30%;
+aside {
+  width: 28%;
   height: fit-content;
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+}
+.aside-search-bar {
+  width: 100%;
+  height: 4vh;
+  padding: 0 0 0 1rem;
+
+  border: 0.5px solid #44444470;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.aside-search-bar input,
+.aside-search-bar button,
+.aside-search-bar input:focus {
+  border: none;
+  outline: none;
+}
+.aside-search-bar input {
+  width: 85%;
+}
+.aside-search-bar button {
+  width: 15%;
+  height: 100%;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+}
+.aside-comments {
+  width: 100%;
+  height: fit-content;
+  margin-top: 1rem;
+}
+.comments-selector {
+  width: 100%;
+  height: 4.5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: .5px solid #44444457;
+}
+.popular-comments, .recent-comments, .comments-icon{
+  margin-right: 1rem;
+}
+.popular-comments h3, .recent-comments h3, .comments-icon i{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.recent-comments h3, .comments-icon i{
+  color: var(--primaryColor);
 }
